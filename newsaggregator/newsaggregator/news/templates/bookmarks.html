@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">My Bookmarks</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% if bookmarks %}
+        {% for article in bookmarks %}
+        {% if article.image_link %}
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ article.image_link }}" class="card-img-top" alt="{{ article.title }}"
+                    style="height: 200px; object-fit: cover;"
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/200';">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">
+                        <a href="{% url 'bookmarked_article' article.article_id %}"
+                            class="text-decoration-none text-dark" target="_blank">
+                            {{ article.title }}
+                        </a>
+                    </h5>
+                    <p class="card-text" style="flex-grow: 1;">Published on: {{ article.pub_date }}</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="{{ article.link }}" class="btn btn-secondary" target="_blank">Visit Article</a>
+                        {% if user.is_authenticated %}
+                        <form method="POST" action="{% url 'bookmarked_article' article.article_id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <div class="alert alert-warning" role="alert">
+            No articles found.
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

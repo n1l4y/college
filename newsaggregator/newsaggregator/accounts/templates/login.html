@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Login</h2>
+
+            <!-- Check if there are form errors -->
+            {% if form.errors %}
+            <div class="alert alert-danger">
+                <strong>There were errors with your submission:</strong>
+                <ul>
+                    {% for field in form %}
+                    {% for error in field.errors %}
+                    <li>{{ field.label }}: {{ error }}</li>
+                    {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                    <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            <div class="card p-4 shadow-sm">
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        {{ form.username.label_tag }}
+                        {{ form.username }}
+                        {% if form.username.help_text %}
+                        <small class="form-text text-muted">{{ form.username.help_text }}</small>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form.password.label_tag }}
+                        {{ form.password }}
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

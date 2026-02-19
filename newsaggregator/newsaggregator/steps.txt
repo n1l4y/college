@@ -1,0 +1,16 @@
+cd ..
+venv\Scripts\Activate
+cd newsaggregator
+
+templates
+├── base.html
+add in settings.py
+
+create and register news app
+
+country and category model
+
+make migrations and migrate - nilay:Nilay123
+
+management/commands populate.py
+python manage.py populate_db
