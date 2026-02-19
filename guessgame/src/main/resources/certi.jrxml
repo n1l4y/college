@@ -1,0 +1,29 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89f17786-ea60-4e1b-bb1b-f52b54d62378">
+	
+	<field name="name" class="java.lang.String"/>
+	
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="6ccbbfde-1d52-4b6a-84c1-caeb063e983b" x="160" y="13" width="240" height="53" fontSize="29.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[CERTIFICATE]]></text>
+		</element>
+	</title>
+	<pageHeader height="41" splitType="Stretch">
+		<element kind="staticText" uuid="269e4db7-0edb-4646-961c-201d4a0e6a83" x="167" y="0" width="220" height="41" fontSize="13.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[OF ACHIEVEMENT]]></text>
+		</element>
+	</pageHeader>
+	<columnHeader height="61" splitType="Stretch"/>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<element kind="textField" uuid="6942ff3f-5f7c-4209-b070-cd982131a208" x="194" y="30" width="166" height="45" fontSize="29.0" hTextAlign="Center">
+				<expression><![CDATA[$F{name}]]></expression>
+				<property name="name" value="name"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
