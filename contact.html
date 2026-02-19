@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+</head>
+
+<body>
+
+    <nav>
+        <img onclick="window.location.href='index.html'" src="images/logo.png" alt="" height="65px">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <section id="about-home">
+        <h2>Contact Us</h2>
+    </section>
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Looking for help? Fill the form and start a new adventure.</p>
+
+            <div class="getin-details">
+                <h3>Headquaters</h3>
+                <div>
+                    <i class="far fa-home get"></i>
+                    <p> Near Sanand-Sarkhej Circle S.G. Road,
+                        Ahmedabad-382210</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <i class="fas fa-phone-alt get"></i>
+                    <p>+91 7227979985 <br>+91 9054511227</p>
+                </div>
+                <h3>Support</h3>
+                <div>
+                    <i class="fal fa-envelope-open-text get"></i>
+                    <p> info@ljku.edu.in <br> ljku01@gmail.com
+                    </p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="pro-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <h4>Let's Connect</h4>
+            <p>Integer at lorem eget diam facilisis lacinia ac id massa.</p>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" name="" id="ct-name">
+                <input type="email" placeholder="Your Email" name="" id="ct-email">
+            </div>
+            <div class="form-col">
+                <input type="text" placeholder="Subject" name="" id="bt-sub">
+            </div>
+            <div class="form-col">
+                <textarea name="" id="bt-msg" cols="30" rows="8" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-col">
+                <button type="submit" id="submit-contact" onclick="validateForm();">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=india%20ahmedabad%20lj%20univerity+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <div class="subscribe">
+                <input type="text" name="" placeholder="Your Email Address" id="bt-email">
+                <a class="yellow" id="submit">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> &copy; Copyright 2024 Simplify Learning | All rights reserved</p>
+            <div class="pro-link">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script>
+        document.querySelector("#submit-contact").addEventListener('click', () => {
+            let pname = /^[A-z]+$/;
+            let bt_name = document.querySelector('#ct-name');
+            let pemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let bt_email = document.querySelector('#ct-email');
+
+
+            if (pname.test(bt_name.value)) {
+                if (pemail.test(bt_email.value)) {
+
+                    alert("Submitted Successfully");
+                }
+                else {
+                    alert("Invalid E-mail: ");
+                }
+            }
+            else {
+                alert("Invalid Name: ");
+            }
+        });
+    </script>
+</body>
+
+</html>

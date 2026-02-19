@@ -1,0 +1,342 @@
+<!-- 
+    Simplified Learning
+    HTML /CSS / JS
+ -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplify Learning</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <img onclick="window.location.href='index.html'" src="images/logo.png" alt="" height="65px">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="carousel slide" data-bs-ride="carousel" id="demo">
+
+            <div class="carousel-indicators">
+                <button data-bs-target="#demo" data-bs-slide-to="0" class="active bg-light"></button>
+                <button data-bs-target="#demo" data-bs-slide-to="1" class="bg-light"></button>
+                <button class="bg-light" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/c1.jpg" alt="" class="d-block">
+                    <div class="btn">
+                        <a class="blue" href="about.html">Learn More</a>
+                        <a class="yellow" href="#course">Visit Courses</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/c4.jpg" alt="" class="d-block ">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/c5.jpg" alt="" class="d-block">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <section id="features">
+        <h1>Awesome Feature</h1>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+            </div>
+
+            <div class="fea-box">
+                <i class="fas fa-file-certificate"></i>
+                <h3>Sell Online Course</h3>
+            </div>
+
+            <div class="fea-box">
+                <i class="fas fa-award"></i>
+                <h3>Global Certification</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="course">
+        <h1>Our Popular Courses</h1>
+        <div class="course-box">
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>JavaScript Beginners Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 499
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c2.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>HTML & CSS Beginners Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 699
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c3.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>Python Beginners Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 799
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c4.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>Web Design Crash Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 799
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c5.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>Web Development Crash Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 999
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c6.jpg" alt="">
+                <div class="details">
+                    <span>Updated 21/8/21</span>
+                    <h6>Angular Beginners Course</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    ₹ 899
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <div class="reminder">
+            <p>Get 100 Online Courses for Free</p>
+            <h1>Register To Get It</h1>
+            <div class="time">
+                <div id="days" class="date">
+                    <p>00</p>
+                </div>
+                <div id="hours" class="date">
+                    <p>00</p>
+                </div>
+                <div id="minutes" class="date">
+                    <p>00</p>
+                </div>
+                <div id="seconds" class="date">
+                    <p>00</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Create Free Account NOW!</h3>
+            <input type="text" name="" id="bt-name" placeholder="Name">
+            <input type="email" name="" id="bt-email" placeholder="Email Address">
+            <input type="text" name="" id="bt-number" placeholder="Phone Number">
+            <div class="btn">
+                <a class="yellow" id="bt-submit">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experts">
+        <h1>Community Experts</h1>
+        <div class="expert-box">
+            <div class="profile">
+                <img src="images/pro1.webp" alt="">
+                <h6>Ema Irnik</h6>
+                <p>Python & Algorithm Expert</p>
+                <div class="pro-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/pro2.webp" alt="">
+                <h6>Jason</h6>
+                <p>Data Analysis Expert</p>
+                <div class="pro-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/pro3.webp" alt="">
+                <h6>Maalik</h6>
+                <p>Full Stack Developer</p>
+                <div class="pro-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/pro4.webp" alt="">
+                <h6>Jennifer </h6>
+                <p>Design Expert</p>
+                <div class="pro-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <div class="subscribe">
+                <input type="text" name="" placeholder="Your Email Address" id="bt-email">
+                <a class="yellow" id="submit">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> &copy; Copyright 2024 Simplify Learning | All rights reserved</p>
+            <div class="pro-link">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
